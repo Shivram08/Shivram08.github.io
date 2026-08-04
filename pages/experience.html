@@ -44,18 +44,25 @@
             <div class="timeline-company">FM Global</div>
           </div>
           <div>
-            <div class="timeline-date">Summer 2026 · Incoming</div>
+            <div class="timeline-date">May 2026 – Present</div>
             <div class="timeline-loc">Johnston, RI</div>
           </div>
         </div>
-        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:16px;">
-          Incoming data science intern at FM Global, one of the world's largest commercial property insurers managing over $800B in insured assets. Will be applying data science and ML techniques to risk modeling problems in a highly regulated, large-scale insurance environment — building directly on prior production experience in anomaly detection and predictive risk modeling.
+        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:20px;">
+          Data science intern at FM Global, one of the world's largest commercial property insurers managing over $800B in insured assets. Building an in-house LLM system that transforms inspection notes, property documents, and photos into structured commercial property risk reports, deployed at production scale.
         </p>
-        <div style="display:flex;flex-wrap:wrap;gap:6px;">
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Risk Modeling</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Insurance Analytics</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Data Science</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Summer 2026</span>
+        <ul class="timeline-bullets">
+          <li>Deployed an LLM risk-report generation system fusing text, images, and documents into structured reports, serving <strong>150 reports/day</strong> at <strong>p95 latency below 250ms</strong> via vLLM on GPU-backed Kubernetes with continuous batching and prefix caching.</li>
+          <li>Orchestrated multi-turn report workflows in Temporal, layering in validation checks for schema adherence, source evidence, and unsupported claims to streamline engineer review.</li>
+          <li>Identified fire code imputation as a high-signal feature for GLM-based loss forecasting across Fire and Boiler &amp; Machinery (B&amp;M) portfolios, reducing <strong>MAE by 12.5%</strong>.</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;">
+          <span class="edu-course" style="border-color:var(--bdl);color:#666;">vLLM</span>
+          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Kubernetes</span>
+          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Temporal</span>
+          <span class="edu-course" style="border-color:var(--bdl);color:#666;">LLM</span>
+          <span class="edu-course" style="border-color:var(--bdl);color:#666;">GLM</span>
+          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Python</span>
         </div>
       </div>
 
@@ -166,21 +173,21 @@
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdl);border:0.5px solid var(--bdl);border-radius:5px;overflow:hidden;" data-animate>
 
       <div style="background:var(--white);padding:28px 24px;">
-        <div style="font-size:24px;margin-bottom:12px;">🏦</div>
-        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Insurance &amp; Risk</div>
-        <div style="font-size:13px;color:#666;line-height:1.7;">Anomaly detection, uprating policy identification, and predictive risk scoring on large-scale insurance datasets. Extensive production experience in regulated environments.</div>
-      </div>
-
-      <div style="background:var(--white);padding:28px 24px;">
         <div style="font-size:24px;margin-bottom:12px;">🤖</div>
-        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">LLMs &amp; NLP</div>
-        <div style="font-size:13px;color:#666;line-height:1.7;">Fine-tuning transformer models, building RAG systems, LangChain orchestration, prompt engineering, and LLM-assisted validation frameworks at scale.</div>
+        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">LLMs &amp; Multimodal</div>
+        <div style="font-size:13px;color:#666;line-height:1.7;">Fine-tuning transformer models, multimodal retrieval systems, RAG, LangChain orchestration, prompt engineering, and LLM-assisted validation frameworks at scale.</div>
       </div>
 
       <div style="background:var(--white);padding:28px 24px;">
         <div style="font-size:24px;margin-bottom:12px;">☁️</div>
         <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Production ML</div>
-        <div style="font-size:13px;color:#666;line-height:1.7;">End-to-end model deployment on AWS SageMaker, Dockerized inference APIs, async processing with Redis, and ETL pipelines handling tens of millions of records.</div>
+        <div style="font-size:13px;color:#666;line-height:1.7;">End-to-end model deployment via vLLM and AWS SageMaker, GPU-backed Kubernetes serving, Dockerized inference APIs, and orchestrated multi-turn workflows in Temporal.</div>
+      </div>
+
+      <div style="background:var(--white);padding:28px 24px;">
+        <div style="font-size:24px;margin-bottom:12px;">🏦</div>
+        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Insurance &amp; Risk</div>
+        <div style="font-size:13px;color:#666;line-height:1.7;">Anomaly detection, uprating policy identification, and predictive risk scoring on large-scale insurance datasets, with production experience in regulated environments.</div>
       </div>
 
     </div>
@@ -242,7 +249,7 @@
   </section>
 
   <footer class="footer">
-    <div class="footer-text">&copy; 2025 Shivram Nekkanti. All rights reserved.</div>
+    <div class="footer-text">&copy; 2026 Shivram Nekkanti. All rights reserved.</div>
     <div class="footer-right">Shipped on GitHub Pages <span class="footer-accent">✦</span></div>
   </footer>
 
