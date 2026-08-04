@@ -243,11 +243,13 @@
           <div class="exp-company">FM Global &middot; Johnston, RI</div>
         </div>
         <div class="exp-mid">
-          Incoming Summer 2026 — risk modeling and data science at one of the world's
-          largest commercial property insurers
+          Building a production LLM risk-report system —
+          <span class="exp-metric">150 reports/day</span> &middot;
+          <span class="exp-metric">p95 &lt; 250ms</span> &middot;
+          <span class="exp-metric">12.5% MAE cut</span>
         </div>
         <div>
-          <div class="exp-date">Summer 2026</div>
+          <div class="exp-date">May 2026 – Present</div>
           <span class="exp-arrow">View Details →</span>
         </div>
       </a>
@@ -337,19 +339,25 @@
     <div class="exp-modal" onclick="event.stopPropagation()">
       <button class="exp-modal-close" onclick="closeModal('fm')">&times;</button>
       <div class="exp-modal-role">Data Scientist Intern</div>
-      <div class="exp-modal-meta">FM Global &middot; Johnston, RI &middot; Summer 2026</div>
+      <div class="exp-modal-meta">FM Global &middot; Johnston, RI &middot; May 2026 – Present</div>
       <div class="exp-modal-overview">
-        Incoming data science intern at FM Global, one of the world's largest commercial
-        property insurers managing over $800B in insured assets. Will be applying ML
-        techniques to risk modeling problems in a large-scale insurance environment —
-        building directly on prior production experience in anomaly detection and
-        predictive risk modeling.
+        Data science intern at FM Global, one of the world's largest commercial
+        property insurers managing over $800B in insured assets. Building an in-house
+        LLM system that transforms inspection notes, property documents, and photos
+        into structured commercial property risk reports, deployed at production scale.
       </div>
+      <ul class="exp-modal-bullets">
+        <li>Deployed an <strong>LLM risk-report generation system</strong> fusing text, images, and documents into structured reports, serving <strong>150 reports/day</strong> at <strong>p95 latency below 250ms</strong> via <strong>vLLM</strong> on <strong>GPU-backed Kubernetes</strong> with continuous batching and prefix caching.</li>
+        <li>Orchestrated multi-turn report workflows in <strong>Temporal</strong>, layering in validation checks for schema adherence, source evidence, and unsupported claims to streamline engineer review.</li>
+        <li>Identified <strong>fire code imputation</strong> as a high-signal feature for <strong>GLM</strong>-based loss forecasting across Fire and Boiler &amp; Machinery (B&amp;M) portfolios, reducing <strong>MAE by 12.5%</strong>.</li>
+      </ul>
       <div class="exp-modal-tags">
-        <span class="exp-modal-tag">Risk Modeling</span>
-        <span class="exp-modal-tag">Insurance Analytics</span>
-        <span class="exp-modal-tag">Data Science</span>
-        <span class="exp-modal-tag">Summer 2026</span>
+        <span class="exp-modal-tag">vLLM</span>
+        <span class="exp-modal-tag">Kubernetes</span>
+        <span class="exp-modal-tag">Temporal</span>
+        <span class="exp-modal-tag">LLM</span>
+        <span class="exp-modal-tag">GLM</span>
+        <span class="exp-modal-tag">Python</span>
       </div>
     </div>
   </div>
