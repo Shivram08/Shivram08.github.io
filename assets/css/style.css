@@ -589,3 +589,7 @@ h1, h2, h3 { font-size: inherit; font-weight: inherit; }
 /* Bullets flow as text; the older flex "timeline fix" split bold phrases into columns */
 .timeline-bullets li { display: block; padding-left: 20px; position: relative; }
 .timeline-bullets li::before { position: absolute; left: 0; top: 1px; }
+
+/* Skills on the experience page: nine groups in a 3-column grid */
+.skills-grid { grid-template-columns: repeat(3, 1fr); gap: 36px 32px; }
+@media (max-width: 960px) { .skills-grid { grid-template-columns: 1fr; } }
