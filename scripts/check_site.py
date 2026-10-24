@@ -11,9 +11,12 @@ STALE = [
     r"3,200", r"190\s?s", r"resume_TK", r"Machine Learning Intern",
     r"custom unit tests", r"81\.6", r"LangChain", r"release readiness",
     r"Data Scientist Co-op", r"Institute of Experiential", r"Jan 2026",
-    r"multimodal", r"OpenCV", r"Plotly",
+    r"fusing text", r"production scale", r"\$800B", r"Plotly",
+    r"617-388-1099", r"tel:", r"Knowledge Graph",
 ]
-BANNED = [r"→\s*</a>", r"·"]
+# Design bans from the redesign were dropped when the original design was
+# restored (Oct 2026); add patterns here if a design rule needs enforcing.
+BANNED = []
 
 class Page(HTMLParser):
     def __init__(self):

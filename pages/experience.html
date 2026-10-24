@@ -1,160 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Experience: Shivram Nekkanti</title>
-  <meta name="description" content="Experience at FM Global, the Institute for Experiential AI at Northeastern University, and Indian Servers, plus education and skills.">
-  <link rel="canonical" href="https://shivram08.github.io/pages/experience.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Experience: Shivram Nekkanti">
-  <meta property="og:description" content="Loss modeling and LLM risk reports at FM Global, fraud scoring at the Institute for Experiential AI, and intent classification at Indian Servers.">
-  <meta property="og:url" content="https://shivram08.github.io/pages/experience.html">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2318212B'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='15' fill='%23F6F7F5' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E">
-  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:wght@400;500&display=swap">
-  <link rel="stylesheet" href="/assets/site.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Shivram Nekkanti</title>
+  <meta name="description" content="Experience of Shivram Nekkanti at FM Global, the Institute for Experiential AI at Northeastern University, and Indian Servers, plus education and skills." />
+  <link rel="canonical" href="https://shivram08.github.io/pages/experience.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Experience — Shivram Nekkanti" />
+  <meta property="og:description" content="Loss modeling and LLM risk reports at FM Global, fraud scoring and LLM document checks at the Institute for Experiential AI, and intent classification at Indian Servers." />
+  <meta property="og:url" content="https://shivram08.github.io/pages/experience.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230A0A0A'/%3E%3Ctext x='15' y='22' font-family='Arial,sans-serif' font-weight='800' font-size='15' fill='%23F5F5F0' text-anchor='middle'%3ESN%3C/text%3E%3Ccircle cx='26' cy='21' r='2' fill='%23B8FF35'/%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="site-name" href="/">Shivram Nekkanti</a>
-      <nav class="site-nav" aria-label="Main">
-        <ul>
-          <li><a href="/pages/work.html">Work</a></li>
-          <li><a href="/pages/experience.html" aria-current="page">Experience</a></li>
-          <li><a href="/pages/contact.html">Contact</a></li>
-          <li><a href="/Shiv_Nekkanti_Resume.pdf">Resume (PDF)</a></li>
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="/" class="nav-logo" aria-label="Shivram Nekkanti, home">SN<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/pages/work.html">Work</a></li>
+      <li><a href="/pages/experience.html" class="active" aria-current="page">Experience</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+    <a href="/Shiv_Nekkanti_Resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a>
+  </nav>
+
+  <main id="main">
+
+  <!-- EXPERIENCE — WHITE -->
+  <section class="sec-white">
+    <div class="eyebrow dark">
+      <span>Experience</span>
+      <span class="eline dark"></span>
+    </div>
+    <h1 class="section-heading dark" style="margin-bottom:48px;">
+      Work <em>History</em>
+    </h1>
+
+    <div class="timeline" data-animate>
+
+      <!-- FM GLOBAL -->
+      <article class="timeline-item" id="fm-global">
+        <div class="timeline-header">
+          <div>
+            <h2 class="timeline-role">Data Scientist Intern, Advanced Analytics</h2>
+            <div class="timeline-company">FM Global</div>
+          </div>
+          <div>
+            <div class="timeline-date">May 2026 – Aug 2026</div>
+            <div class="timeline-loc">Johnston, RI</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:4px;">
+          Loss models for commercial property, and LLM work on engineering risk reports.
+        </p>
+
+        <h3 class="timeline-sub">Loss modeling</h3>
+        <ul class="timeline-bullets">
+          <li>Reduced loss-prediction <strong>MAE 12.5%</strong> with GLMs for commercial Fire and Boiler &amp; Machinery losses via feature engineering and missing-data imputation; compared occupancy slices and built separate 100- and 500-year models, not one pooled fit.</li>
+          <li>Built the building-level dataset in Databricks (PostgreSQL federated into Unity Catalog), using Spark SQL joins, CTEs, and window functions across <strong>7 tables (4M+ rows)</strong> to resolve one-to-many inspection/loss histories into a 300K-row modeling table.</li>
+          <li>Built reusable PySpark pipelines with schema, duplicate-ID and row-count checks.</li>
+          <li>Handled a <strong>93/5/2 class imbalance</strong> with SMOTE and PR-AUC-driven threshold selection, setting cutoffs from the relative cost of missing a high-loss building versus over-flagging one instead of defaulting to 0.5.</li>
+          <li>Logged <strong>32 runs across 4 model variants</strong> in the MLflow Model Registry, and shipped the selected model via APIs powering FM's internal climate-risk app.</li>
+          <li>Co-built an interactive Tableau dashboard on Databricks of MAE gains in loss dollars on <strong>500 high-TIV (total insured value) sites</strong>, and presented it live to SMEs and non-technical colleagues.</li>
         </ul>
-      </nav>
-      <button type="button" class="theme-toggle" aria-label="Switch theme">
-        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/></svg>
-      </button>
+
+        <h3 class="timeline-sub">LLM risk reports</h3>
+        <ul class="timeline-bullets">
+          <li>Fine-tuned <strong>Gemma 3 27B with LoRA</strong> on 10K+ curated risk reports from 2015–2024 against the production prompting system, raising BERTScore vs. human-authored reports from <strong>0.78 to 0.91</strong>; a Markdown-AST structure metric exposed template over-memorization.</li>
+          <li>Served the model with <strong>vLLM on H100 GPU nodes in GKE</strong> (tensor parallelism TP=2, continuous batching, prefix caching), with Prometheus observability, holding <strong>p90 time-to-first-token under 1.2 s</strong> on 25–30K-token report prompts.</li>
+          <li>Removed the RAG layer after benchmarking it against long-context ingestion of each report's source documents: every report's sources fit the model window, so dropping retrieval eliminated retrieval misses and a component to maintain.</li>
+          <li>Rewrote the engineer-notes parsing stage of the team's <strong>Temporal</strong> workflow, turning inspectors' field notes into report inputs.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="edu-course">GLMs</span>
+          <span class="edu-course">Databricks</span>
+          <span class="edu-course">PySpark</span>
+          <span class="edu-course">MLflow</span>
+          <span class="edu-course">Tableau</span>
+          <span class="edu-course">LoRA</span>
+          <span class="edu-course">vLLM</span>
+          <span class="edu-course">GKE</span>
+          <span class="edu-course">Temporal</span>
+        </div>
+      </article>
+
+      <!-- IEAI -->
+      <article class="timeline-item" id="ieai">
+        <div class="timeline-header">
+          <div>
+            <h2 class="timeline-role">AI Engineer Co-op</h2>
+            <div class="timeline-company">Institute for Experiential AI, Northeastern University</div>
+          </div>
+          <div>
+            <div class="timeline-date">Aug 2025 – Feb 2026</div>
+            <div class="timeline-loc">Portland, ME</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:20px;">
+          Fraud scoring at quote time, and an LLM document-checking system for an insurance client.
+        </p>
+        <ul class="timeline-bullets">
+          <li>Raised application-fraud (material misrepresentation) <strong>Gini from 0.26 to 0.40</strong> (54% lift over production) and first-decile capture from 16% to 25%, replacing a PyTorch DNN with a Transformer-encoder + XGBoost ensemble (850K+ policies, 10 sources).</li>
+          <li>Ran end-to-end feature engineering (create, validate, down-select) across all sources and traced anomalies distorting performance.</li>
+          <li>Served the ensemble as a Dockerized Flask API on AWS SageMaker for quote-time scoring, load-tested at <strong>p95 under 180 ms</strong>.</li>
+          <li>Built a <strong>120+ rule Gemini 2.5 Pro document-checking system</strong> (field extraction, cross-document checks) that routes only flagged applications to people, and designed its stratified-sample validation with underwriters, diagnosing per-rule failures as over-strict or over-permissive. The system cut review time <strong>75%</strong> (8h to 2h per 100 applications).</li>
+          <li>Engineered AWS Glue ETL pipelines replicating <strong>23M+ policy records</strong> (13 tables) into PostgreSQL on AWS RDS, with SQL source-to-target reconciliation reaching <strong>99.97% data integrity</strong>.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="edu-course">XGBoost</span>
+          <span class="edu-course">PyTorch</span>
+          <span class="edu-course">Gemini 2.5 Pro</span>
+          <span class="edu-course">AWS SageMaker</span>
+          <span class="edu-course">AWS Glue</span>
+          <span class="edu-course">AWS RDS</span>
+          <span class="edu-course">PostgreSQL</span>
+          <span class="edu-course">Docker</span>
+          <span class="edu-course">Flask</span>
+        </div>
+      </article>
+
+      <!-- INDIAN SERVERS -->
+      <article class="timeline-item" id="indian-servers">
+        <div class="timeline-header">
+          <div>
+            <h2 class="timeline-role">Machine Learning Engineer</h2>
+            <div class="timeline-company">Indian Servers</div>
+          </div>
+          <div>
+            <div class="timeline-date">Sep 2023 – Aug 2024</div>
+            <div class="timeline-loc">Hyderabad, India</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:20px;">
+          Intent classification and retrieval routing for e-commerce customer support.
+        </p>
+        <ul class="timeline-bullets">
+          <li>Fine-tuned <strong>DistilBERT on 35K labeled e-commerce support tickets</strong> for customer-intent classification, improving accuracy <strong>20%</strong>.</li>
+          <li>Built a hybrid routing pipeline combining intent classification, sentence-embedding similarity search, and FAQ/cache fallback; with async Celery/Redis inference, it cut latency <strong>15%</strong> and bounce rate <strong>35%</strong>.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="edu-course">DistilBERT</span>
+          <span class="edu-course">Sentence Embeddings</span>
+          <span class="edu-course">Celery</span>
+          <span class="edu-course">Redis</span>
+          <span class="edu-course">Python</span>
+        </div>
+      </article>
+
     </div>
-  </header>
+  </section>
 
-  <main id="main" class="container">
-
-    <div class="page-head">
-      <h1>Experience</h1>
-      <p>Most recent first. <a href="/Shiv_Nekkanti_Resume.pdf">Download resume (PDF)</a></p>
+  <!-- EDUCATION — BLACK -->
+  <section class="sec-black" id="education">
+    <div class="eyebrow light">
+      <h2>Education</h2>
+      <span class="eline light"></span>
     </div>
+    <div data-animate>
+      <div class="edu-item">
+        <div>
+          <h3 class="edu-school">Northeastern University</h3>
+          <div class="edu-degree">Master of Science in Data Science</div>
+          <div class="skill-group-label" style="margin-bottom:10px;">Coursework</div>
+          <div class="edu-courses">
+            <span class="edu-course">Machine Learning</span>
+            <span class="edu-course">Statistical Modeling</span>
+            <span class="edu-course">Deep Learning</span>
+            <span class="edu-course">NLP</span>
+            <span class="edu-course">MLOps</span>
+            <span class="edu-course">Database Management</span>
+          </div>
+        </div>
+        <div class="edu-year">
+          Expected Dec 2026<br>
+          <span style="font-size:11px;color:var(--gd);">Boston, MA</span>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div>
+          <h3 class="edu-school">SRM Institute of Science and Technology</h3>
+          <div class="edu-degree">B.Tech in Computer Science and Engineering (AI/ML specialization)</div>
+        </div>
+        <div class="edu-year">
+          May 2024<br>
+          <span style="font-size:11px;color:var(--gd);">India</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="role" id="fm-global" aria-labelledby="fm-global-title">
-      <header class="role-head">
-        <h2 id="fm-global-title">FM Global</h2>
-        <p class="role-title">Data Scientist Intern, Advanced Analytics</p>
-        <p class="role-meta">
-          <span>Johnston, RI</span>
-          <span><time datetime="2026-05">May 2026</time> – <time datetime="2026-08">Aug 2026</time></span>
-        </p>
-      </header>
-      <p class="role-context">Loss models for commercial property, and LLM work on engineering risk reports.</p>
+  <!-- DOMAIN EXPERTISE — WHITE -->
+  <section class="sec-white">
+    <div class="eyebrow dark">
+      <h2>Domain Expertise</h2>
+      <span class="eline dark"></span>
+    </div>
+    <div class="domain-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--bdl);border:0.5px solid var(--bdl);border-radius:5px;overflow:hidden;" data-animate>
 
-      <h3>Loss modeling</h3>
-      <ul class="bullets">
-        <li>Reduced loss-prediction MAE <mark>12.5%</mark> with GLMs for commercial Fire and Boiler &amp; Machinery losses via feature engineering and missing-data imputation; compared occupancy slices and built separate 100- and 500-year models, not one pooled fit.</li>
-        <li>Built the building-level dataset in Databricks (PostgreSQL federated into Unity Catalog), using Spark SQL joins, CTEs, and window functions across 7 tables (4M+ rows) to resolve one-to-many inspection/loss histories into a 300K-row modeling table.</li>
-        <li>Built reusable PySpark pipelines with schema, duplicate-ID and row-count checks.</li>
-        <li>Handled a 93/5/2 class imbalance with SMOTE and PR-AUC-driven threshold selection, setting cutoffs from the relative cost of missing a high-loss building versus over-flagging one instead of defaulting to 0.5.</li>
-        <li>Logged 32 runs across 4 model variants in the MLflow Model Registry, and shipped the selected model via APIs powering FM's internal climate-risk app.</li>
-        <li>Co-built an interactive Tableau dashboard on Databricks of MAE gains in loss dollars on 500 high-TIV (total insured value) sites, and presented it live to SMEs and non-technical colleagues.</li>
-      </ul>
+      <div style="background:var(--white);padding:28px 24px;">
+        <div style="font-size:24px;margin-bottom:12px;" aria-hidden="true">🏦</div>
+        <h3 style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Insurance &amp; Risk</h3>
+        <div style="font-size:13px;color:#666;line-height:1.7;">Loss modeling for commercial property, quote-time application-fraud scoring, cost-based cutoffs, and validation with underwriters.</div>
+      </div>
 
-      <h3>LLM risk reports</h3>
-      <ul class="bullets">
-        <li>Fine-tuned Gemma 3 27B with LoRA on 10K+ curated risk reports from 2015–2024 against the production prompting system, raising BERTScore vs. human-authored reports from <mark>0.78 to 0.91</mark>; a Markdown-AST structure metric exposed template over-memorization.</li>
-        <li>Served the model with vLLM on H100 GPU nodes in GKE (tensor parallelism TP=2, continuous batching, prefix caching), with Prometheus observability, holding p90 time-to-first-token under 1.2 s on 25–30K-token report prompts.</li>
-        <li>Removed the RAG layer after benchmarking it against long-context ingestion of each report's source documents: every report's sources fit the model window, so dropping retrieval eliminated retrieval misses and a component to maintain.</li>
-        <li>Rewrote the engineer-notes parsing stage of the team's Temporal workflow, turning inspectors' field notes into report inputs.</li>
-      </ul>
-    </section>
+      <div style="background:var(--white);padding:28px 24px;">
+        <div style="font-size:24px;margin-bottom:12px;" aria-hidden="true">🤖</div>
+        <h3 style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">LLM Systems</h3>
+        <div style="font-size:13px;color:#666;line-height:1.7;">LoRA fine-tuning, structured extraction with verbatim grounding, retrieval ablations, LLM document checks, and LLM-as-judge evaluation.</div>
+      </div>
 
-    <section class="role" id="ieai" aria-labelledby="ieai-title">
-      <header class="role-head">
-        <h2 id="ieai-title">Institute for Experiential AI, Northeastern University</h2>
-        <p class="role-title">AI Engineer Co-op</p>
-        <p class="role-meta">
-          <span>Portland, ME</span>
-          <span><time datetime="2025-08">Aug 2025</time> – <time datetime="2026-02">Feb 2026</time></span>
-        </p>
-      </header>
-      <p class="role-context">Fraud scoring at quote time, and an LLM document-checking system for an insurance client.</p>
-      <ul class="bullets">
-        <li>Raised application-fraud (material misrepresentation) Gini from <mark>0.26 to 0.40</mark> (54% lift over production) and first-decile capture from 16% to 25%, replacing a PyTorch DNN with a Transformer-encoder + XGBoost ensemble (850K+ policies, 10 sources).</li>
-        <li>Ran end-to-end feature engineering (create, validate, down-select) across all sources and traced anomalies distorting performance.</li>
-        <li>Served the ensemble as a Dockerized Flask API on AWS SageMaker for quote-time scoring, load-tested at p95 under 180 ms.</li>
-        <li>Built a 120+ rule Gemini 2.5 Pro document-checking system (field extraction, cross-document checks) that routes only flagged applications to people, and designed its stratified-sample validation with underwriters, diagnosing per-rule failures as over-strict or over-permissive. The system cut review time <mark>75%</mark> (8h to 2h per 100 applications).</li>
-        <li>Engineered AWS Glue ETL pipelines replicating 23M+ policy records (13 tables) into PostgreSQL on AWS RDS, with SQL source-to-target reconciliation reaching 99.97% data integrity.</li>
-      </ul>
-    </section>
+      <div style="background:var(--white);padding:28px 24px;">
+        <div style="font-size:24px;margin-bottom:12px;" aria-hidden="true">☁️</div>
+        <h3 style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Production ML</h3>
+        <div style="font-size:13px;color:#666;line-height:1.7;">vLLM serving on GKE, Dockerized model APIs on AWS SageMaker, MLflow tracking, and ETL with source-to-target reconciliation.</div>
+      </div>
 
-    <section class="role" id="indian-servers" aria-labelledby="indian-servers-title">
-      <header class="role-head">
-        <h2 id="indian-servers-title">Indian Servers</h2>
-        <p class="role-title">Machine Learning Engineer</p>
-        <p class="role-meta">
-          <span>Hyderabad, India</span>
-          <span><time datetime="2023-09">Sep 2023</time> – <time datetime="2024-08">Aug 2024</time></span>
-        </p>
-      </header>
-      <p class="role-context">Intent classification and retrieval routing for e-commerce customer support.</p>
-      <ul class="bullets">
-        <li>Fine-tuned DistilBERT on 35K labeled e-commerce support tickets for customer-intent classification, improving accuracy <mark>20%</mark>.</li>
-        <li>Built a hybrid routing pipeline combining intent classification, sentence-embedding similarity search, and FAQ/cache fallback; with async Celery/Redis inference, it cut latency 15% and bounce rate 35%.</li>
-      </ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="education" aria-labelledby="education-title">
-      <h2 id="education-title">Education</h2>
-      <ul class="edu">
-        <li>
-          <h3>Northeastern University</h3>
-          <p>Master of Science in Data Science</p>
-          <p class="role-meta"><span>Boston, MA</span><span>Expected Dec 2026</span></p>
-          <p>Coursework: Machine Learning, Statistical Modeling, Deep Learning, NLP, MLOps, Database Management</p>
-        </li>
-        <li>
-          <h3>SRM Institute of Science and Technology</h3>
-          <p>B.Tech in Computer Science and Engineering (AI/ML specialization)</p>
-          <p class="role-meta"><span>India</span><span><time datetime="2024-05">May 2024</time></span></p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
-      <dl class="skills">
-        <dt>Statistical modeling</dt>
-        <dd>GLMs, Logistic Regression, XGBoost, LightGBM, SMOTE, Champion–Challenger, Vintage Backtesting</dd>
-        <dt>Validation</dt>
-        <dd>Gini, AUC, KS, PR-AUC, MAE, Calibration, Cost-Based Cutoffs, Decile Capture, Slice Analysis</dd>
-        <dt>Data &amp; MLOps</dt>
-        <dd>Python, SQL (PostgreSQL, Spark SQL), PySpark, Databricks, MLflow, AWS Glue/RDS/SageMaker, Tableau</dd>
-        <dt>LLM &amp; apps</dt>
-        <dd>LoRA, Structured Extraction (Pydantic), Hybrid Retrieval, Reranking, vLLM, FastAPI, Docker, Temporal</dd>
-      </dl>
-      <p class="section-more"><a class="button" href="/Shiv_Nekkanti_Resume.pdf">Download resume (PDF)</a></p>
-    </section>
+  <!-- SKILLS — BLACK -->
+  <section class="sec-black" id="skills">
+    <div class="eyebrow light">
+      <h2>Technical Skills</h2>
+      <span class="eline light"></span>
+    </div>
+    <div class="skills-grid" data-animate>
+      <div class="skill-group">
+        <h3 class="skill-group-label">Statistical Modeling</h3>
+        <div class="skill-chips">
+          <span class="chip chip-dark">GLMs</span>
+          <span class="chip chip-dark">Logistic Regression</span>
+          <span class="chip chip-dark">XGBoost</span>
+          <span class="chip chip-dark">LightGBM</span>
+          <span class="chip chip-dark">SMOTE</span>
+          <span class="chip chip-dark">Champion–Challenger</span>
+          <span class="chip chip-dark">Vintage Backtesting</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-label">Validation</h3>
+        <div class="skill-chips">
+          <span class="chip chip-dark">Gini</span>
+          <span class="chip chip-dark">AUC</span>
+          <span class="chip chip-dark">KS</span>
+          <span class="chip chip-dark">PR-AUC</span>
+          <span class="chip chip-dark">MAE</span>
+          <span class="chip chip-dark">Calibration</span>
+          <span class="chip chip-dark">Cost-Based Cutoffs</span>
+          <span class="chip chip-dark">Decile Capture</span>
+          <span class="chip chip-dark">Slice Analysis</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-label">Data &amp; MLOps</h3>
+        <div class="skill-chips">
+          <span class="chip chip-dark">Python</span>
+          <span class="chip chip-dark">SQL (PostgreSQL, Spark SQL)</span>
+          <span class="chip chip-dark">PySpark</span>
+          <span class="chip chip-dark">Databricks</span>
+          <span class="chip chip-dark">MLflow</span>
+          <span class="chip chip-dark">AWS Glue/RDS/SageMaker</span>
+          <span class="chip chip-dark">Tableau</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-label">LLM &amp; Apps</h3>
+        <div class="skill-chips">
+          <span class="chip chip-dark">LoRA</span>
+          <span class="chip chip-dark">Structured Extraction (Pydantic)</span>
+          <span class="chip chip-dark">Hybrid Retrieval</span>
+          <span class="chip chip-dark">Reranking</span>
+          <span class="chip chip-dark">vLLM</span>
+          <span class="chip chip-dark">FastAPI</span>
+          <span class="chip chip-dark">Docker</span>
+          <span class="chip chip-dark">Temporal</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:40px;">
+      <a href="/Shiv_Nekkanti_Resume.pdf" target="_blank" rel="noopener" class="btn-primary">Download Resume</a>
+    </div>
+  </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Shivram Nekkanti</p>
-      <ul>
-        <li><a href="mailto:shivramnekkanti8@gmail.com">Email</a></li>
-        <li><a href="https://github.com/Shivram08">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/shivram08">LinkedIn</a></li>
-        <li><a href="/Shiv_Nekkanti_Resume.pdf">Resume (PDF)</a></li>
-      </ul>
-    </div>
+  <footer class="footer">
+    <div class="footer-text">&copy; 2026 Shivram Nekkanti. All rights reserved.</div>
+    <div class="footer-right">Shipped on GitHub Pages <span class="footer-accent" aria-hidden="true">✦</span></div>
   </footer>
 
-  <script src="/assets/site.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
