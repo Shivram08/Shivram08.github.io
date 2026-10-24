@@ -1,159 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work — Shivram Nekkanti</title>
-  <meta name="description" content="Projects by Shivram Nekkanti — RAG systems, multimodal AI, LLM pipelines, and production ML." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work: case studies by Shivram Nekkanti</title>
+  <meta name="description" content="Case studies: agentic clause extraction, consumer credit PD modeling, a single-GPU LLM serving engine, and an evaluation harness for a fine-tuned 7B model.">
+  <link rel="canonical" href="https://shivram08.github.io/pages/work.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Work: case studies by Shivram Nekkanti">
+  <meta property="og:description" content="Case studies in retrieval and extraction, credit risk modeling, LLM inference, and evaluation, each with the key decision and the evidence.">
+  <meta property="og:url" content="https://shivram08.github.io/pages/work.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2318212B'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='15' fill='%23F6F7F5' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <a href="../index.html" class="nav-logo">SN<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="work.html" class="active">Work</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="../Shivram_Nekkanti_resume_TK.pdf" target="_blank" class="nav-cta">Resume</a>
-  </nav>
-
-  <!-- PROJECTS — BLACK -->
-  <section class="sec-black">
-    <div class="eyebrow light">
-      <span>All Projects</span>
-      <span class="eline light"></span>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-name" href="/">Shivram Nekkanti</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/pages/work.html" aria-current="page">Work</a></li>
+          <li><a href="/pages/experience.html">Experience</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/Shiv_Nekkanti_Resume.pdf">Resume (PDF)</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="theme-toggle" aria-label="Switch theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/></svg>
+      </button>
     </div>
-    <h1 class="section-heading light" style="margin-bottom:48px;">
-      Selected <em>Work</em>
-    </h1>
+  </header>
 
-    <div class="projects-grid-2" data-animate>
+  <main id="main" class="container">
 
-      <!-- RESEARCHLINEAGE -->
-      <div class="proj-detail" id="lineage">
-        <div class="proj-detail-img">
-          <img src="../assets/ResearchLineage.png" alt="ResearchLineage" />
-        </div>
-        <div class="proj-detail-tags">
-          <span class="proj-detail-tag">LLM</span>
-          <span class="proj-detail-tag">Knowledge Graph</span>
-          <span class="proj-detail-tag">Python</span>
-          <span class="proj-detail-tag">CI/CD</span>
-          <span class="proj-detail-tag">MLOps</span>
-          <span class="proj-detail-tag">GitHub Actions</span>
-        </div>
-        <div class="proj-detail-title">ResearchLineage — LLM Research Path Tracker</div>
-        <div class="proj-detail-desc">
-          Collaborative LLM-powered research lineage tracker that maps how ideas evolve across academic literature. I contributed the citation-graph data acquisition pipeline, fine-tuned and evaluated the lineage-prediction model, and built the MLOps monitoring dashboards (data drift and prediction-quality drift) — working alongside teammates who built the frontend, CI/CD, and model registry infrastructure.
-        </div>
-        <div class="proj-detail-metrics">
-          <div class="proj-metric"><strong>Data acquisition</strong> — async citation-graph crawler with adaptive filtering and multi-layer caching, cutting API calls 98% and runtime 46%</div>
-          <div class="proj-metric"><strong>Model training &amp; evaluation</strong> — fine-tuned an LLM for lineage prediction with a bias-aware train/test split eliminating data leakage</div>
-          <div class="proj-metric"><strong>MLOps monitoring</strong> — Kibana/Elasticsearch dashboards tracking data and prediction-quality drift over time</div>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/gautamrajur/ResearchLineage" target="_blank" class="proj-link primary">GitHub →</a>
-        </div>
-      </div>
-
-      <!-- VIBE / CLIP -->
-      <div class="proj-detail" id="vibe">
-        <div class="proj-detail-img">
-          <img src="../assets/Vibe.png" alt="VIBE Multimodal" />
-        </div>
-        <div class="proj-detail-tags">
-          <span class="proj-detail-tag">CLIP ViT-B/32</span>
-          <span class="proj-detail-tag">Multimodal</span>
-          <span class="proj-detail-tag">Energy-Based Models</span>
-          <span class="proj-detail-tag">PyTorch</span>
-          <span class="proj-detail-tag">Langevin MCMC</span>
-          <span class="proj-detail-tag">MS-COCO</span>
-        </div>
-        <div class="proj-detail-title">VIBE — Visual &amp; Image-Based Evaluation</div>
-        <div class="proj-detail-desc">
-          Multimodal AI system for fine-grained image-text alignment scoring. Uses a frozen CLIP ViT-B/32 backbone for cross-modal feature extraction, paired with Energy-Based Models trained via InfoNCE contrastive loss on MS-COCO. Langevin MCMC dynamics enable nuanced alignment scoring far beyond standard cosine similarity — capturing subtle semantic relationships between vision and language modalities.
-        </div>
-        <div class="proj-detail-metrics">
-          <div class="proj-metric"><strong>CLIP ViT-B/32</strong> frozen backbone — joint vision-language embedding space</div>
-          <div class="proj-metric"><strong>InfoNCE contrastive loss</strong> trained on MS-COCO image-caption pairs</div>
-          <div class="proj-metric"><strong>Langevin MCMC</strong> dynamics for energy-based alignment scoring</div>
-          <div class="proj-metric"><strong>Multimodal</strong> semantic scoring beyond cosine similarity baselines</div>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/Shivram08/VIBE" target="_blank" class="proj-link primary">GitHub →</a>
-        </div>
-      </div>
-
-      <!-- THERABOT -->
-      <div class="proj-detail" id="therabot">
-        <div class="proj-detail-img">
-          <img src="../assets/Therabot.png" alt="TheraBot" />
-        </div>
-        <div class="proj-detail-tags">
-          <span class="proj-detail-tag">LLM</span>
-          <span class="proj-detail-tag">Fine-tuning</span>
-          <span class="proj-detail-tag">BERTweet</span>
-          <span class="proj-detail-tag">RoBERTa</span>
-          <span class="proj-detail-tag">DistilGPT2</span>
-          <span class="proj-detail-tag">Flask</span>
-          <span class="proj-detail-tag">Streamlit</span>
-        </div>
-        <div class="proj-detail-title">TheraBot — Mental Health Support Chatbot</div>
-        <div class="proj-detail-desc">
-          Real-time mental health support chatbot built on a three-model fine-tuning pipeline. BERTweet with attention pooling handles emotion classification, a fine-tuned RoBERTa detects sarcasm for context-aware responses, and DistilGPT2 generates empathetic replies conditioned on detected emotion, sarcasm signals, and conversation history. Deployed as a Flask + Streamlit application.
-        </div>
-        <div class="proj-detail-metrics">
-          <div class="proj-metric"><strong>72% macro F1</strong> on GoEmotions — BERTweet fine-tuned with attention pooling</div>
-          <div class="proj-metric"><strong>74% accuracy</strong> sarcasm detection — RoBERTa fine-tuned on SARC dataset</div>
-          <div class="proj-metric"><strong>DistilGPT2</strong> response generation conditioned on emotion + sarcasm + context</div>
-          <div class="proj-metric"><strong>End-to-end</strong> fine-tuning pipeline across three transformer architectures</div>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/Shivram08/TheraBot_2" target="_blank" class="proj-link primary">GitHub →</a>
-        </div>
-      </div>
-
-      <!-- HUMAN ACTION RECOGNITION -->
-      <div class="proj-detail" id="har">
-        <div class="proj-detail-img">
-          <img src="../assets/HAR.png" alt="Human Action Recognition" />
-        </div>
-        <div class="proj-detail-tags">
-          <span class="proj-detail-tag">Computer Vision</span>
-          <span class="proj-detail-tag">PyTorch</span>
-          <span class="proj-detail-tag">CNN</span>
-          <span class="proj-detail-tag">OpenCV</span>
-          <span class="proj-detail-tag">Deep Learning</span>
-        </div>
-        <div class="proj-detail-title">Human Action Recognition — CV Pipeline</div>
-        <div class="proj-detail-desc">
-          End-to-end computer vision pipeline for real-time human action recognition from video streams. Built on a deep CNN architecture with temporal feature extraction using OpenCV preprocessing. Trained on benchmark action recognition datasets with a focus on generalization across lighting conditions and camera angles. Optimized for inference speed suitable for real-time deployment.
-        </div>
-        <div class="proj-detail-metrics">
-          <div class="proj-metric"><strong>CNN-based</strong> temporal feature extraction for action classification</div>
-          <div class="proj-metric"><strong>OpenCV</strong> preprocessing pipeline for real-time video frame handling</div>
-          <div class="proj-metric"><strong>Optimized</strong> for real-time inference across diverse environmental conditions</div>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/Shivram08/Human-action-recognition" target="_blank" class="proj-link primary">GitHub →</a>
-        </div>
-      </div>
-
+    <div class="page-head">
+      <h1>Work</h1>
+      <p>Four case studies, each with what I built and what the evaluation showed, then earlier projects.</p>
+      <nav class="toc" aria-label="Case studies">
+        <ul>
+          <li><a href="#contract-intelligence">Contract Intelligence</a></li>
+          <li><a href="#credit-pd">Credit PD</a></li>
+          <li><a href="#small-inference">small-inference</a></li>
+          <li><a href="#lineage">ResearchLineage</a></li>
+          <li><a href="#earlier">Earlier work</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
 
-  <footer class="footer">
-    <div class="footer-text">&copy; 2026 Shivram Nekkanti. All rights reserved.</div>
-    <div class="footer-right">Shipped on GitHub Pages <span class="footer-accent">✦</span></div>
+    <article class="case" id="contract-intelligence" aria-labelledby="contract-intelligence-title">
+      <header class="case-head">
+        <h2 id="contract-intelligence-title">Contract Intelligence Service</h2>
+        <p class="case-meta">
+          <time datetime="2026-09">Sep 2026</time>
+          <a href="https://github.com/Shivram08/contract-intelligence">Code on GitHub</a>
+        </p>
+      </header>
+      <p class="case-summary">An agentic clause-extraction service over CUAD (510 contracts, 13,101 labeled clauses). Hybrid retrieval feeds a tool-calling agent with verbatim grounding, and evals gate CI. Ablating retrieval showed that recall misleads when an agent consumes the results.</p>
+      <dl class="case-details">
+        <dt>What I built</dt>
+        <dd>
+          <ul class="bullets">
+            <li>Hybrid Postgres full-text search + pgvector retrieval with a cross-encoder reranker</li>
+            <li>A tool-calling agent with Pydantic outputs</li>
+            <li>Verbatim grounding of extracted clauses</li>
+            <li>30 deterministic rules</li>
+            <li>OpenTelemetry tracing</li>
+            <li>CI-gated evals</li>
+          </ul>
+        </dd>
+        <dt>What the evaluation showed</dt>
+        <dd>
+          <p>I ablated retrieval over 84 cases. Skipping the cross-encoder reranker kept recall@20 at <mark>0.917</mark> with <mark>360×</mark> lower latency, yet cut end-to-end span F1 by <mark>0.074</mark>, because the agent depends on rank order. Judged by recall alone, the reranker looked removable; judged by what the agent extracted, it was not.</p>
+        </dd>
+        <dt>Results</dt>
+        <dd>
+          <div class="table-wrap">
+            <table>
+              <caption>Effect of removing the cross-encoder reranker, 84 cases</caption>
+              <thead>
+                <tr><th scope="col">Metric</th><th scope="col">Without the reranker</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Recall@20</th><td>Unchanged at 0.917</td></tr>
+                <tr><th scope="row">Latency</th><td>360× lower</td></tr>
+                <tr><th scope="row">End-to-end span F1</th><td>Down 0.074</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </dd>
+        <dt>Stack</dt>
+        <dd>FastAPI, PostgreSQL full-text search, pgvector, cross-encoder reranker, Claude API, Pydantic, OpenTelemetry</dd>
+      </dl>
+    </article>
+
+    <article class="case" id="credit-pd" aria-labelledby="credit-pd-title">
+      <header class="case-head">
+        <h2 id="credit-pd-title">Consumer Credit PD Modeling &amp; Vintage Backtesting</h2>
+        <p class="case-meta">
+          <time datetime="2026-08">Aug 2026</time>
+          <a href="https://github.com/Shivram08/Credit_Risk">Code on GitHub</a>
+        </p>
+      </header>
+      <p class="case-summary">A champion–challenger probability-of-default framework on 1.3M+ LendingClub loans, tested out of time on later vintages. The repo includes an eight-section model governance document, an interactive HTML dashboard, and a README written as a case study.</p>
+      <dl class="case-details">
+        <dt>What I built</dt>
+        <dd>
+          <ul class="bullets">
+            <li>An origination-time PySpark feature pipeline from 2.26M raw records</li>
+            <li>Every post-origination field excluded to control target leakage; caught FICO fields missing from the extract</li>
+            <li>An out-of-time split: train 2007–2015, test 2016–2018</li>
+            <li>A 3-feature logistic regression champion and a 37-feature LightGBM challenger</li>
+            <li>An eight-section model governance document and an interactive HTML dashboard</li>
+          </ul>
+        </dd>
+        <dt>What the evaluation showed</dt>
+        <dd>
+          <p>Both models showed near-identical calibration drift, which pointed at the vintages, not the models. <mark>90.5%</mark> of 2018 loans were still unresolved (label censoring), yet age-matched default curves showed 2018 loans genuinely defaulting slower.</p>
+        </dd>
+        <dt>Results</dt>
+        <dd>
+          <div class="table-wrap">
+            <table>
+              <caption>Champion and challenger</caption>
+              <thead>
+                <tr><th scope="col">Model</th><th scope="col" class="num">Features</th><th scope="col" class="num">AUC</th><th scope="col" class="num">KS</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Logistic regression champion</th><td class="num">3</td><td class="num">0.681</td><td class="num">0.266</td></tr>
+                <tr><th scope="row">LightGBM challenger</th><td class="num">37</td><td class="num">0.705</td><td class="num">0.299</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </dd>
+        <dt>Stack</dt>
+        <dd>PySpark, LightGBM, scikit-learn</dd>
+      </dl>
+    </article>
+
+    <article class="case" id="small-inference" aria-labelledby="small-inference-title">
+      <header class="case-head">
+        <h2 id="small-inference-title">small-inference</h2>
+        <p class="case-meta">
+          <time datetime="2026-10">Oct 2026</time>
+          <a href="https://github.com/Shivram08/small-inference">Code on GitHub</a>
+        </p>
+      </header>
+      <p class="case-summary">A single-GPU LLM serving engine built from scratch: a paged KV cache, Triton paged-attention kernels, and continuous batching with chunked prefill.</p>
+      <dl class="case-details">
+        <dt>What I built</dt>
+        <dd>
+          <ul class="bullets">
+            <li>A paged KV cache</li>
+            <li>Triton paged-attention kernels</li>
+            <li>Continuous batching with chunked prefill</li>
+            <li>An INT8 KV cache with per-channel K scaling</li>
+            <li>331 correctness tests, including bit-identical logits vs Hugging Face</li>
+          </ul>
+        </dd>
+        <dt>What the evaluation showed</dt>
+        <dd>
+          <p>The INT8 KV cache with per-channel K scaling holds perplexity within <mark>0.56%</mark> of bf16 while lifting throughput <mark>22%</mark>.</p>
+        </dd>
+        <dt>Results</dt>
+        <dd>
+          <div class="table-wrap">
+            <table>
+              <caption>KV cache precision</caption>
+              <thead>
+                <tr><th scope="col">KV cache</th><th scope="col">Perplexity vs bf16</th><th scope="col">Throughput</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">bf16</th><td>Baseline</td><td>Baseline</td></tr>
+                <tr><th scope="row">INT8, per-channel K scaling</th><td>Within 0.56%</td><td>+22%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </dd>
+        <dt>Stack</dt>
+        <dd>Python, PyTorch, Triton</dd>
+      </dl>
+    </article>
+
+    <article class="case" id="lineage" aria-labelledby="lineage-title">
+      <header class="case-head">
+        <h2 id="lineage-title">ResearchLineage (team project)</h2>
+        <p class="case-meta">
+          <time datetime="2026-04">Apr 2026</time>
+          <a href="https://github.com/gautamrajur/ResearchLineage">Code on GitHub</a>
+        </p>
+      </header>
+      <p class="case-summary">A team project on citation-lineage prediction. My part was evaluation: a reproducible harness for the project's fine-tuned Qwen 2.5-7B, a benchmark against Gemini 2.5 Flash, and the gates a model must pass before promotion.</p>
+      <dl class="case-details">
+        <dt>What I built</dt>
+        <dd>
+          <ul class="bullets">
+            <li>A reproducible evaluation harness: strict/soft match, MRR, secondary-influence F1, and a 5-dimension LLM-as-judge</li>
+            <li>A benchmark against Gemini 2.5 Flash on 101 held-out samples</li>
+            <li>Promotion gates on strict accuracy, judge score, and slice disparity</li>
+          </ul>
+        </dd>
+        <dt>What the evaluation showed</dt>
+        <dd>
+          <p>On 101 held-out samples, the fine-tuned Qwen 2.5-7B scored <mark>0.736</mark> composite against <mark>0.785</mark> for Gemini 2.5 Flash.</p>
+        </dd>
+        <dt>Results</dt>
+        <dd>
+          <div class="table-wrap">
+            <table>
+              <caption>Composite score, 101 held-out samples</caption>
+              <thead>
+                <tr><th scope="col">Model</th><th scope="col" class="num">Composite</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Fine-tuned Qwen 2.5-7B</th><td class="num">0.736</td></tr>
+                <tr><th scope="row">Gemini 2.5 Flash</th><td class="num">0.785</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </dd>
+        <dt>Promotion gates</dt>
+        <dd>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Gate</th><th scope="col">Threshold</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Strict accuracy</th><td>≥ 0.60</td></tr>
+                <tr><th scope="row">Judge score</th><td>≥ 3.0/5</td></tr>
+                <tr><th scope="row">Slice disparity across domains and citation tiers</th><td>≤ 0.15</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </dd>
+        <dt>Stack</dt>
+        <dd>Qwen 2.5-7B, Gemini 2.5 Flash, LLM-as-judge, Python</dd>
+      </dl>
+    </article>
+
+    <section class="section" id="earlier" aria-labelledby="earlier-title">
+      <h2 id="earlier-title">Earlier work</h2>
+      <ul class="earlier">
+        <li id="vibe">
+          <h3>VIBE</h3>
+          <p>Scores image–text alignment with energy-based models on a frozen CLIP ViT-B/32 backbone, trained with InfoNCE contrastive loss on MS-COCO using Langevin MCMC dynamics.</p>
+          <p><a href="https://github.com/Shivram08/VIBE">Code on GitHub</a></p>
+        </li>
+        <li id="therabot">
+          <h3>TheraBot</h3>
+          <p>A support chatbot built from three fine-tuned models: BERTweet with attention pooling for emotion (72% macro F1 on GoEmotions), RoBERTa for sarcasm (74% accuracy on SARC), and DistilGPT2 for responses conditioned on emotion, sarcasm and conversation history. Served with Flask and Streamlit.</p>
+          <p><a href="https://github.com/Shivram08/TheraBot_2">Code on GitHub</a></p>
+        </li>
+        <li id="har">
+          <h3>Human action recognition</h3>
+          <p>A hybrid Inflated 3D ConvNet (I3D) and temporal convolutional network (TCN) for recognizing actions in video.</p>
+          <p><a href="https://github.com/Shivram08/Human-action-recognition">Code on GitHub</a></p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Shivram Nekkanti</p>
+      <ul>
+        <li><a href="mailto:shivramnekkanti8@gmail.com">Email</a></li>
+        <li><a href="https://github.com/Shivram08">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/shivram08">LinkedIn</a></li>
+        <li><a href="/Shiv_Nekkanti_Resume.pdf">Resume (PDF)</a></li>
+      </ul>
+    </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>

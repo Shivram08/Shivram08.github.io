@@ -1,258 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experience — Shivram Nekkanti</title>
-  <meta name="description" content="Work experience of Shivram Nekkanti — Data Scientist and ML Engineer." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience: Shivram Nekkanti</title>
+  <meta name="description" content="Experience at FM Global, the Institute for Experiential AI at Northeastern University, and Indian Servers, plus education and skills.">
+  <link rel="canonical" href="https://shivram08.github.io/pages/experience.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Experience: Shivram Nekkanti">
+  <meta property="og:description" content="Loss modeling and LLM risk reports at FM Global, fraud scoring at the Institute for Experiential AI, and intent classification at Indian Servers.">
+  <meta property="og:url" content="https://shivram08.github.io/pages/experience.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2318212B'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='15' fill='%23F6F7F5' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <a href="../index.html" class="nav-logo">SN<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="../Shivram_Nekkanti_resume_TK.pdf" target="_blank" class="nav-cta">Resume</a>
-  </nav>
-
-  <!-- EXPERIENCE — WHITE -->
-  <section class="sec-white">
-    <div class="eyebrow dark">
-      <span>Experience</span>
-      <span class="eline dark"></span>
-    </div>
-    <h1 class="section-heading dark" style="margin-bottom:48px;">
-      Work <em style="color:var(--acid);">History</em>
-    </h1>
-
-    <div class="timeline" data-animate>
-
-      <!-- FM GLOBAL -->
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Data Scientist Intern</div>
-            <div class="timeline-company">FM Global</div>
-          </div>
-          <div>
-            <div class="timeline-date">May 2026 – Present</div>
-            <div class="timeline-loc">Johnston, RI</div>
-          </div>
-        </div>
-        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:20px;">
-          Data science intern at FM Global, one of the world's largest commercial property insurers managing over $800B in insured assets. Building an in-house LLM system that transforms inspection notes, property documents, and photos into structured commercial property risk reports, deployed at production scale.
-        </p>
-        <ul class="timeline-bullets">
-          <li>Deployed an LLM risk-report generation system fusing text, images, and documents into structured reports, serving <strong>150 reports/day</strong> at <strong>p95 latency below 250ms</strong> via vLLM on GPU-backed Kubernetes with continuous batching and prefix caching.</li>
-          <li>Orchestrated multi-turn report workflows in Temporal, layering in validation checks for schema adherence, source evidence, and unsupported claims to streamline engineer review.</li>
-          <li>Identified fire code imputation as a high-signal feature for GLM-based loss forecasting across Fire and Boiler &amp; Machinery (B&amp;M) portfolios, reducing <strong>MAE by 12.5%</strong>.</li>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-name" href="/">Shivram Nekkanti</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/pages/work.html">Work</a></li>
+          <li><a href="/pages/experience.html" aria-current="page">Experience</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/Shiv_Nekkanti_Resume.pdf">Resume (PDF)</a></li>
         </ul>
-        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;">
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">vLLM</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Kubernetes</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Temporal</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">LLM</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">GLM</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Python</span>
-        </div>
-      </div>
+      </nav>
+      <button type="button" class="theme-toggle" aria-label="Switch theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </header>
 
-      <!-- IEA -->
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Data Scientist Co-op</div>
-            <div class="timeline-company">Institute of Experiential AI</div>
-          </div>
-          <div>
-            <div class="timeline-date">Aug 2025 – Jan 2026</div>
-            <div class="timeline-loc">Portland, ME</div>
-          </div>
-        </div>
-        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:20px;">
-          Worked across the full ML lifecycle at a research-focused AI institute — from building LLM-assisted data validation pipelines on Vertex AI to deploying production DNN models on AWS SageMaker. Primary domain was insurance: detecting high-risk policies and uprating patterns across millions of records. Owned end-to-end delivery from data engineering through inference infrastructure.
+  <main id="main" class="container">
+
+    <div class="page-head">
+      <h1>Experience</h1>
+      <p>Most recent first. <a href="/Shiv_Nekkanti_Resume.pdf">Download resume (PDF)</a></p>
+    </div>
+
+    <section class="role" id="fm-global" aria-labelledby="fm-global-title">
+      <header class="role-head">
+        <h2 id="fm-global-title">FM Global</h2>
+        <p class="role-title">Data Scientist Intern, Advanced Analytics</p>
+        <p class="role-meta">
+          <span>Johnston, RI</span>
+          <span><time datetime="2026-05">May 2026</time> – <time datetime="2026-08">Aug 2026</time></span>
         </p>
-        <ul class="timeline-bullets">
-          <li>Designed an LLM-assisted validation framework using Gemini 1.5 Pro on Vertex AI, cutting manual batch review time by <strong>75%</strong> — from 8 hours to 2 hours per cycle — backed by 120+ custom unit tests.</li>
-          <li>Migrated <strong>23M insurance policy records</strong> to PostgreSQL on AWS RDS via AWS Glue ETL, achieving <strong>99.97% data integrity</strong> through automated parity checks and enabling self-serve analytics access.</li>
-          <li>Built a PyTorch DNN with custom feature engineering on 850K historical policies, improving high-risk and uprating policy detection by <strong>20%</strong> and directly supporting underwriting decisioning.</li>
-          <li>Deployed Dockerized Flask inference APIs on AWS SageMaker serving <strong>3,200 predictions/hour</strong> at p95 &lt; 180ms via async processing and Redis caching.</li>
-          <li>Partnered with underwriting and operations stakeholders to define model success criteria, align outputs with business rules, and manage release readiness reviews.</li>
-        </ul>
-        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;">
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">PyTorch</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Gemini 1.5 Pro</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Vertex AI</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">AWS SageMaker</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">AWS RDS</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">AWS Glue</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Docker</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Flask</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Redis</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">PostgreSQL</span>
-        </div>
-      </div>
+      </header>
+      <p class="role-context">Loss models for commercial property, and LLM work on engineering risk reports.</p>
 
-      <!-- INDIAN SERVERS -->
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Machine Learning Intern</div>
-            <div class="timeline-company">Indian Servers</div>
-          </div>
-          <div>
-            <div class="timeline-date">Sept 2023 – Aug 2024</div>
-            <div class="timeline-loc">Hyderabad, India</div>
-          </div>
-        </div>
-        <p style="font-size:14px;color:#555;line-height:1.75;margin-bottom:20px;">
-          Built NLP-powered customer support systems from the ground up — fine-tuning transformer models for intent classification, streamlining prompt engineering workflows with reusable LangChain components, and deploying scalable async inference infrastructure that handled hundreds of concurrent requests.
+      <h3>Loss modeling</h3>
+      <ul class="bullets">
+        <li>Reduced loss-prediction MAE <mark>12.5%</mark> with GLMs for commercial Fire and Boiler &amp; Machinery losses via feature engineering and missing-data imputation; compared occupancy slices and built separate 100- and 500-year models, not one pooled fit.</li>
+        <li>Built the building-level dataset in Databricks (PostgreSQL federated into Unity Catalog), using Spark SQL joins, CTEs, and window functions across 7 tables (4M+ rows) to resolve one-to-many inspection/loss histories into a 300K-row modeling table.</li>
+        <li>Built reusable PySpark pipelines with schema, duplicate-ID and row-count checks.</li>
+        <li>Handled a 93/5/2 class imbalance with SMOTE and PR-AUC-driven threshold selection, setting cutoffs from the relative cost of missing a high-loss building versus over-flagging one instead of defaulting to 0.5.</li>
+        <li>Logged 32 runs across 4 model variants in the MLflow Model Registry, and shipped the selected model via APIs powering FM's internal climate-risk app.</li>
+        <li>Co-built an interactive Tableau dashboard on Databricks of MAE gains in loss dollars on 500 high-TIV (total insured value) sites, and presented it live to SMEs and non-technical colleagues.</li>
+      </ul>
+
+      <h3>LLM risk reports</h3>
+      <ul class="bullets">
+        <li>Fine-tuned Gemma 3 27B with LoRA on 10K+ curated risk reports from 2015–2024 against the production prompting system, raising BERTScore vs. human-authored reports from <mark>0.78 to 0.91</mark>; a Markdown-AST structure metric exposed template over-memorization.</li>
+        <li>Served the model with vLLM on H100 GPU nodes in GKE (tensor parallelism TP=2, continuous batching, prefix caching), with Prometheus observability, holding p90 time-to-first-token under 1.2 s on 25–30K-token report prompts.</li>
+        <li>Removed the RAG layer after benchmarking it against long-context ingestion of each report's source documents: every report's sources fit the model window, so dropping retrieval eliminated retrieval misses and a component to maintain.</li>
+        <li>Rewrote the engineer-notes parsing stage of the team's Temporal workflow, turning inspectors' field notes into report inputs.</li>
+      </ul>
+    </section>
+
+    <section class="role" id="ieai" aria-labelledby="ieai-title">
+      <header class="role-head">
+        <h2 id="ieai-title">Institute for Experiential AI, Northeastern University</h2>
+        <p class="role-title">AI Engineer Co-op</p>
+        <p class="role-meta">
+          <span>Portland, ME</span>
+          <span><time datetime="2025-08">Aug 2025</time> – <time datetime="2026-02">Feb 2026</time></span>
         </p>
-        <ul class="timeline-bullets">
-          <li>Fine-tuned DistilBERT on 35K labeled support tickets using HuggingFace Transformers, boosting intent classification F1 from <strong>68% to 81.6%</strong> across 1,000+ unique customer query types.</li>
-          <li>Built a reusable library of 12 LangChain PromptTemplates and SequentialChains, reducing prompt engineering iteration time by <strong>55%</strong> and standardizing LLM workflows across the team.</li>
-          <li>Deployed Celery async task queues with a Redis message broker across 4 worker nodes, cutting average response time by <strong>15%</strong> (190s → 155s) while handling 850 concurrent requests.</li>
-        </ul>
-        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;">
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">DistilBERT</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">HuggingFace</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">LangChain</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Celery</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Redis</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">NLP</span>
-          <span class="edu-course" style="border-color:var(--bdl);color:#666;">Python</span>
-        </div>
-      </div>
+      </header>
+      <p class="role-context">Fraud scoring at quote time, and an LLM document-checking system for an insurance client.</p>
+      <ul class="bullets">
+        <li>Raised application-fraud (material misrepresentation) Gini from <mark>0.26 to 0.40</mark> (54% lift over production) and first-decile capture from 16% to 25%, replacing a PyTorch DNN with a Transformer-encoder + XGBoost ensemble (850K+ policies, 10 sources).</li>
+        <li>Ran end-to-end feature engineering (create, validate, down-select) across all sources and traced anomalies distorting performance.</li>
+        <li>Served the ensemble as a Dockerized Flask API on AWS SageMaker for quote-time scoring, load-tested at p95 under 180 ms.</li>
+        <li>Built a 120+ rule Gemini 2.5 Pro document-checking system (field extraction, cross-document checks) that routes only flagged applications to people, and designed its stratified-sample validation with underwriters, diagnosing per-rule failures as over-strict or over-permissive. The system cut review time <mark>75%</mark> (8h to 2h per 100 applications).</li>
+        <li>Engineered AWS Glue ETL pipelines replicating 23M+ policy records (13 tables) into PostgreSQL on AWS RDS, with SQL source-to-target reconciliation reaching 99.97% data integrity.</li>
+      </ul>
+    </section>
 
+    <section class="role" id="indian-servers" aria-labelledby="indian-servers-title">
+      <header class="role-head">
+        <h2 id="indian-servers-title">Indian Servers</h2>
+        <p class="role-title">Machine Learning Engineer</p>
+        <p class="role-meta">
+          <span>Hyderabad, India</span>
+          <span><time datetime="2023-09">Sep 2023</time> – <time datetime="2024-08">Aug 2024</time></span>
+        </p>
+      </header>
+      <p class="role-context">Intent classification and retrieval routing for e-commerce customer support.</p>
+      <ul class="bullets">
+        <li>Fine-tuned DistilBERT on 35K labeled e-commerce support tickets for customer-intent classification, improving accuracy <mark>20%</mark>.</li>
+        <li>Built a hybrid routing pipeline combining intent classification, sentence-embedding similarity search, and FAQ/cache fallback; with async Celery/Redis inference, it cut latency 15% and bounce rate 35%.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <ul class="edu">
+        <li>
+          <h3>Northeastern University</h3>
+          <p>Master of Science in Data Science</p>
+          <p class="role-meta"><span>Boston, MA</span><span>Expected Dec 2026</span></p>
+          <p>Coursework: Machine Learning, Statistical Modeling, Deep Learning, NLP, MLOps, Database Management</p>
+        </li>
+        <li>
+          <h3>SRM Institute of Science and Technology</h3>
+          <p>B.Tech in Computer Science and Engineering (AI/ML specialization)</p>
+          <p class="role-meta"><span>India</span><span><time datetime="2024-05">May 2024</time></span></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skills">
+        <dt>Statistical modeling</dt>
+        <dd>GLMs, Logistic Regression, XGBoost, LightGBM, SMOTE, Champion–Challenger, Vintage Backtesting</dd>
+        <dt>Validation</dt>
+        <dd>Gini, AUC, KS, PR-AUC, MAE, Calibration, Cost-Based Cutoffs, Decile Capture, Slice Analysis</dd>
+        <dt>Data &amp; MLOps</dt>
+        <dd>Python, SQL (PostgreSQL, Spark SQL), PySpark, Databricks, MLflow, AWS Glue/RDS/SageMaker, Tableau</dd>
+        <dt>LLM &amp; apps</dt>
+        <dd>LoRA, Structured Extraction (Pydantic), Hybrid Retrieval, Reranking, vLLM, FastAPI, Docker, Temporal</dd>
+      </dl>
+      <p class="section-more"><a class="button" href="/Shiv_Nekkanti_Resume.pdf">Download resume (PDF)</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Shivram Nekkanti</p>
+      <ul>
+        <li><a href="mailto:shivramnekkanti8@gmail.com">Email</a></li>
+        <li><a href="https://github.com/Shivram08">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/shivram08">LinkedIn</a></li>
+        <li><a href="/Shiv_Nekkanti_Resume.pdf">Resume (PDF)</a></li>
+      </ul>
     </div>
-  </section>
-
-  <!-- EDUCATION — BLACK -->
-  <section class="sec-black">
-    <div class="eyebrow light">
-      <span>Education</span>
-      <span class="eline light"></span>
-    </div>
-    <div data-animate>
-      <div class="edu-item">
-        <div>
-          <div class="edu-school">Northeastern University</div>
-          <div class="edu-degree">Master of Science in Data Science</div>
-          <div class="skill-group-label" style="margin-bottom:10px;">Coursework</div>
-          <div class="edu-courses">
-            <span class="edu-course">Natural Language Processing</span>
-            <span class="edu-course">Machine Learning</span>
-            <span class="edu-course">Unsupervised ML &amp; MLops</span>
-            <span class="edu-course">Algorithms</span>
-            <span class="edu-course">Database Management</span>
-          </div>
-        </div>
-        <div class="edu-year">
-          Expected Dec 2026<br>
-          <span style="font-size:11px;color:var(--gd);">Boston, MA</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOMAIN EXPERTISE — WHITE -->
-  <section class="sec-white">
-    <div class="eyebrow dark">
-      <span>Domain Expertise</span>
-      <span class="eline dark"></span>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdl);border:0.5px solid var(--bdl);border-radius:5px;overflow:hidden;" data-animate>
-
-      <div style="background:var(--white);padding:28px 24px;">
-        <div style="font-size:24px;margin-bottom:12px;">🤖</div>
-        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">LLMs &amp; Multimodal</div>
-        <div style="font-size:13px;color:#666;line-height:1.7;">Fine-tuning transformer models, multimodal retrieval systems, RAG, LangChain orchestration, prompt engineering, and LLM-assisted validation frameworks at scale.</div>
-      </div>
-
-      <div style="background:var(--white);padding:28px 24px;">
-        <div style="font-size:24px;margin-bottom:12px;">☁️</div>
-        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Production ML</div>
-        <div style="font-size:13px;color:#666;line-height:1.7;">End-to-end model deployment via vLLM and AWS SageMaker, GPU-backed Kubernetes serving, Dockerized inference APIs, and orchestrated multi-turn workflows in Temporal.</div>
-      </div>
-
-      <div style="background:var(--white);padding:28px 24px;">
-        <div style="font-size:24px;margin-bottom:12px;">🏦</div>
-        <div style="font-size:13px;font-weight:700;color:#111;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Insurance &amp; Risk</div>
-        <div style="font-size:13px;color:#666;line-height:1.7;">Anomaly detection, uprating policy identification, and predictive risk scoring on large-scale insurance datasets, with production experience in regulated environments.</div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SKILLS — BLACK -->
-  <section class="sec-black">
-    <div class="eyebrow light">
-      <span>Technical Skills</span>
-      <span class="eline light"></span>
-    </div>
-    <div class="skills-grid" data-animate>
-      <div class="skill-group">
-        <div class="skill-group-label">Languages</div>
-        <div class="skill-chips">
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Python</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">SQL (Postgres)</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">R</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">C/C++</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-label">ML Libraries</div>
-        <div class="skill-chips">
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">PyTorch</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">TensorFlow</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Scikit-learn</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">HuggingFace</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">LangChain</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">NLTK</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">spaCy</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">OpenCV</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-label">Cloud &amp; DevOps</div>
-        <div class="skill-chips">
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">AWS SageMaker</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">AWS Lambda</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">AWS S3</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">AWS RDS</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">AWS Glue</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">GCP</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Docker</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Git</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-label">Data &amp; Analytics</div>
-        <div class="skill-chips">
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">PySpark</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Snowflake</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Pandas</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">A/B Testing</span>
-          <span class="chip" style="background:var(--black3);color:var(--white);border-color:var(--bdd);">Statistical Modeling</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-text">&copy; 2026 Shivram Nekkanti. All rights reserved.</div>
-    <div class="footer-right">Shipped on GitHub Pages <span class="footer-accent">✦</span></div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
